@@ -48,6 +48,6 @@ return [
     'menu_offers' => '',
     'menu_costs' => '',
     'menu_settings' => '',
-    'menu_logout' => '',s
+    'menu_logout' => '',
     
 ];

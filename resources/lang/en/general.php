@@ -29,4 +29,18 @@ return [
     'modal_title_addcustomer' => 'ДОБАВЯНЕ НА КЛИЕНТ',
     'modal_title_addcompany' => 'ДОБАВЯНЕ НА ФИРМА',
     
+// MENU
+'menu_home' => 'HOME',
+'menu_service' => 'SERVICE',
+'menu_videosurveillance' => 'VIDEOSURVEILLANCE',
+'menu_customers' => 'CUSTOMERS',
+'menu_companies' => 'COMPANIES',
+'menu_store' => 'STORE',
+'menu_orders' => 'ORDERS',
+'menu_invoices' => 'INVOICES',
+'menu_offers' => 'OFFERS',
+'menu_costs' => 'PROFITS and COSTS',
+'menu_settings' => 'SETTINGS',
+'menu_logout' => 'LOGOUT',
+
 ];

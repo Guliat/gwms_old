@@ -94,35 +94,35 @@
         <div id="sidebar" class="hidden-print">
             <div id="sidebar-btn"><i class='fa fa-bars fa-2x'></i></div>
             <ul>
-                <li><a href='{{url('/')}}' class='<?php if($gwmsurl == $url){ echo "activelink"; } ?>'><i class='fa fa-home fa-lg'></i> НАЧАЛО </a></li>
+                <li><a href='{{url('/')}}' class='<?php if($gwmsurl == $url){ echo "activelink"; } ?>'><i class='fa fa-home fa-lg'></i> {!! Lang::get('general.menu_home') !!} </a></li>
                 @if($uml == 1)
-                <li><a href='{{url('/pcs/active')}}' class='<?php if($gwmsurl.'/pcs/active' == $url){ echo "activelink"; } ?>'><i class='fa fa-laptop fa-lg'></i> СЕРВИЗ </a></li>
+                <li><a href='{{url('/pcs/active')}}' class='<?php if($gwmsurl.'/pcs/active' == $url){ echo "activelink"; } ?>'><i class='fa fa-laptop fa-lg'></i> {!! Lang::get('general.menu_service') !!} </a></li>
                 @endif
                 @if($uml == 1)
-                <li><a href='{{url('/videosurveillance')}}' class='<?php if($gwmsurl.'/videosurveillance' == $url){ echo "activelink"; } ?>' style='font-size: 2.1vh;'><i class='fa fa-video-camera fa-lg'></i> ВИДЕОНАБЛЮДЕНИЕ </a></li>
+                <li><a href='{{url('/videosurveillance')}}' class='<?php if($gwmsurl.'/videosurveillance' == $url){ echo "activelink"; } ?>' style='font-size: 2.1vh;'><i class='fa fa-video-camera fa-lg'></i> {!! Lang::get('general.menu_videosurveillance') !!} </a></li>
                 @endif
                 @if($uml == 1 || $uml == 74 || $uml == 4)
-                <li><a href='{{url('/customers')}}' class='<?php if($gwmsurl.'/customers' == $url){ echo "activelink"; } ?>'><i class='fa fa-user fa-lg'></i> КЛИЕНТИ </a></li>
+                <li><a href='{{url('/customers')}}' class='<?php if($gwmsurl.'/customers' == $url){ echo "activelink"; } ?>'><i class='fa fa-user fa-lg'></i> {!! Lang::get('general.menu_customers') !!} </a></li>
                 @endif
                 @if($uml == 1 || $uml == 74  || $uml == 4)
-                <li><a href='{{url('/companies')}}' class='<?php if($gwmsurl.'/companies' == $url){ echo "activelink"; } ?>'><i class='fa fa-users fa-lg'></i> ФИРМИ </a></li>
+                <li><a href='{{url('/companies')}}' class='<?php if($gwmsurl.'/companies' == $url){ echo "activelink"; } ?>'><i class='fa fa-users fa-lg'></i> {!! Lang::get('general.menu_companies') !!} </a></li>
                 @endif
                 @if($uml == 1 || $uml == 74)
-                <li><a href='{{url('/store')}}' class='<?php if($gwmsurl.'/store' == $url){ echo "activelink"; } ?>'><i class='fa fa-truck fa-lg'></i> СКЛАД </a></li>
+                <li><a href='{{url('/store')}}' class='<?php if($gwmsurl.'/store' == $url){ echo "activelink"; } ?>'><i class='fa fa-truck fa-lg'></i> {!! Lang::get('general.menu_store') !!} </a></li>
                 @endif
                 @if($uml == 1 || $uml == 74)
-                <li><a href='{{url('/orders')}}' class='<?php if($gwmsurl.'/orders' == $url){ echo "activelink"; } ?>'><i class='fa fa-file-text fa-lg'></i> ПРОТОКОЛИ </a></li>
+                <li><a href='{{url('/orders')}}' class='<?php if($gwmsurl.'/orders' == $url){ echo "activelink"; } ?>'><i class='fa fa-file-text fa-lg'></i> {!! Lang::get('general.menu_orders') !!} </a></li>
                 @endif
                 @if($uml == 1 || $uml == 74  || $uml == 4)
-                <li><a href='{{url('/invoices')}}' class='<?php if($gwmsurl.'/invoices' == $url){ echo "activelink"; } ?>'><i class='fa fa-file-text fa-lg'></i> ФАКТУРИ </a></li>
+                <li><a href='{{url('/invoices')}}' class='<?php if($gwmsurl.'/invoices' == $url){ echo "activelink"; } ?>'><i class='fa fa-file-text fa-lg'></i> {!! Lang::get('general.menu_invoices') !!} </a></li>
                 @endif
                 @if($uml == 1)
-                <li><a href='#'><i class='fa fa-file-text fa-lg'></i> ОФЕРТИ </a></li>
+                <li><a href='#'><i class='fa fa-file-text fa-lg'></i> {!! Lang::get('general.menu_offers') !!} </a></li>
                 @endif
                 @if($uml == 1 || $uml == 7 || $uml == 74)
-                <li><a href='{{url('/costs')}}' class='<?php if($gwmsurl.'/costs' == $url){ echo "activelink"; } ?>' style='font-size: 2.1vh;'><i class='fa fa-line-chart fa-lg'></i> ПРИХОДИ И РАЗХОДИ </a></li>
+                <li><a href='{{url('/costs')}}' class='<?php if($gwmsurl.'/costs' == $url){ echo "activelink"; } ?>' style='font-size: 2.1vh;'><i class='fa fa-line-chart fa-lg'></i> {!! Lang::get('general.menu_costs') !!} </a></li>
                 @endif
-                <li><a href='{{url('/settings')}}' class='<?php if($gwmsurl.'/settings' == $url){ echo "activelink"; } ?>'><i class='fa fa-cog fa-lg'></i> НАСТРОЙКИ </a></li>
+                <li><a href='{{url('/settings')}}' class='<?php if($gwmsurl.'/settings' == $url){ echo "activelink"; } ?>'><i class='fa fa-cog fa-lg'></i> {!! Lang::get('general.menu_settings') !!} </a></li>
                 <li><a href='{{url('logout')}}'> <i class="fa fa-power-off"></i></a></li>
             </ul>
         </div>
